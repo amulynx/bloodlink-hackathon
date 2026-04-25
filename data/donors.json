@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Rahul Sharma",
+    "bloodGroup": "O+",
+    "city": "Mumbai",
+    "phone": "+91-98765-43210",
+    "age": 28,
+    "lastDonated": "2025-12-15",
+    "available": true
+  },
+  {
+    "id": 2,
+    "name": "Priya Patel",
+    "bloodGroup": "A+",
+    "city": "Mumbai",
+    "phone": "+91-87654-32109",
+    "age": 32,
+    "lastDonated": "2026-01-10",
+    "available": true
+  },
+  {
+    "id": 3,
+    "name": "Arjun Reddy",
+    "bloodGroup": "B+",
+    "city": "Hyderabad",
+    "phone": "+91-76543-21098",
+    "age": 24,
+    "lastDonated": "2025-11-20",
+    "available": true
+  },
+  {
+    "id": 4,
+    "name": "Sneha Gupta",
+    "bloodGroup": "AB+",
+    "city": "Delhi",
+    "phone": "+91-65432-10987",
+    "age": 29,
+    "lastDonated": "2026-02-05",
+    "available": true
+  },
+  {
+    "id": 5,
+    "name": "Vikram Singh",
+    "bloodGroup": "O-",
+    "city": "Bangalore",
+    "phone": "+91-54321-09876",
+    "age": 35,
+    "lastDonated": "2025-10-30",
+    "available": true
+  },
+  {
+    "id": 6,
+    "name": "Ananya Iyer",
+    "bloodGroup": "A-",
+    "city": "Chennai",
+    "phone": "+91-43210-98765",
+    "age": 27,
+    "lastDonated": "2026-03-01",
+    "available": true
+  },
+  {
+    "id": 7,
+    "name": "Karan Malhotra",
+    "bloodGroup": "B-",
+    "city": "Mumbai",
+    "phone": "+91-32109-87654",
+    "age": 31,
+    "lastDonated": "2025-09-15",
+    "available": false
+  },
+  {
+    "id": 8,
+    "name": "Divya Nair",
+    "bloodGroup": "O+",
+    "city": "Bangalore",
+    "phone": "+91-21098-76543",
+    "age": 26,
+    "lastDonated": "2026-01-25",
+    "available": true
+  },
+  {
+    "id": 9,
+    "name": "Rohit Desai",
+    "bloodGroup": "AB-",
+    "city": "Pune",
+    "phone": "+91-10987-65432",
+    "age": 33,
+    "lastDonated": "2025-08-10",
+    "available": true
+  },
+  {
+    "id": 10,
+    "name": "Meera Joshi",
+    "bloodGroup": "A+",
+    "city": "Mumbai",
+    "phone": "+91-99887-76655",
+    "age": 30,
+    "lastDonated": "2026-02-20",
+    "available": true
+  },
+  {
+    "id": 11,
+    "name": "Naveen Kumar",
+    "bloodGroup": "B+",
+    "city": "Delhi",
+    "phone": "+91-88776-65544",
+    "age": 29,
+    "lastDonated": "2025-12-01",
+    "available": true
+  },
+  {
+    "id": 12,
+    "name": "Lakshmi Prasad",
+    "bloodGroup": "O-",
+    "city": "Hyderabad",
+    "phone": "+91-77665-54433",
+    "age": 37,
+    "lastDonated": "2026-03-10",
+    "available": true
+  }
+]

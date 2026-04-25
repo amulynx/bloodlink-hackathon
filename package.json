@@ -1,0 +1,21 @@
+{
+  "name": "bloodlink",
+  "version": "1.0.0",
+  "description": "BloodLink - Find nearby blood donors instantly during emergencies",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "blood-donor",
+    "emergency",
+    "health",
+    "hackathon"
+  ],
+  "author": "BloodLink Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
