@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # BloodLink - Hackathon MVP
 
 **Find nearby blood donors instantly during emergencies.**
@@ -286,3 +287,6 @@ Edit the CSS variables at the top of `public/style.css`:
 MIT - Free to use for hackathons, learning, and projects.
 
 **Built with care for emergencies. Demo responsibly.**
+=======
+# bloodlink-hackathon
+>>>>>>> 39958e4f312d92873c84b9852d4811a995d598d3
