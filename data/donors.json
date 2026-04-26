@@ -1,122 +1,176 @@
 [
   {
     "id": 1,
-    "name": "Rahul Sharma",
+    "name": "Sujan Shrestha",
     "bloodGroup": "O+",
-    "city": "Mumbai",
-    "phone": "+91-98765-43210",
+    "city": "Kathmandu",
+    "phone": "+977-98010-12345",
     "age": 28,
-    "lastDonated": "2025-12-15",
-    "available": true
+    "lastDonated": "2026-03-10",
+    "available": true,
+    "status": "available"
   },
   {
     "id": 2,
-    "name": "Priya Patel",
+    "name": "Mina Gurung",
     "bloodGroup": "A+",
-    "city": "Mumbai",
-    "phone": "+91-87654-32109",
+    "city": "Lalitpur",
+    "phone": "+977-98412-54321",
     "age": 32,
-    "lastDonated": "2026-01-10",
-    "available": true
+    "lastDonated": "2026-01-18",
+    "available": false,
+    "status": "busy"
   },
   {
     "id": 3,
-    "name": "Arjun Reddy",
+    "name": "Nischal Rai",
     "bloodGroup": "B+",
-    "city": "Hyderabad",
-    "phone": "+91-76543-21098",
+    "city": "Pokhara",
+    "phone": "+977-98513-67890",
     "age": 24,
-    "lastDonated": "2025-11-20",
-    "available": true
+    "lastDonated": "2025-12-05",
+    "available": false,
+    "status": "offline"
   },
   {
     "id": 4,
-    "name": "Sneha Gupta",
+    "name": "Anjali Karki",
     "bloodGroup": "AB+",
-    "city": "Delhi",
-    "phone": "+91-65432-10987",
+    "city": "Biratnagar",
+    "phone": "+977-98614-11223",
     "age": 29,
-    "lastDonated": "2026-02-05",
-    "available": true
+    "lastDonated": "2026-02-27",
+    "available": true,
+    "status": "available"
   },
   {
     "id": 5,
-    "name": "Vikram Singh",
+    "name": "Pratik Thapa",
     "bloodGroup": "O-",
-    "city": "Bangalore",
-    "phone": "+91-54321-09876",
+    "city": "Bhaktapur",
+    "phone": "+977-98102-33445",
     "age": 35,
     "lastDonated": "2025-10-30",
-    "available": true
+    "available": true,
+    "status": "available"
   },
   {
     "id": 6,
-    "name": "Ananya Iyer",
+    "name": "Sarita Lama",
     "bloodGroup": "A-",
-    "city": "Chennai",
-    "phone": "+91-43210-98765",
+    "city": "Hetauda",
+    "phone": "+977-98011-55667",
     "age": 27,
     "lastDonated": "2026-03-01",
-    "available": true
+    "available": false,
+    "status": "busy"
   },
   {
     "id": 7,
-    "name": "Karan Malhotra",
+    "name": "Rajesh Adhikari",
     "bloodGroup": "B-",
-    "city": "Mumbai",
-    "phone": "+91-32109-87654",
+    "city": "Kathmandu",
+    "phone": "+977-98108-77889",
     "age": 31,
     "lastDonated": "2025-09-15",
-    "available": false
+    "available": false,
+    "status": "offline"
   },
   {
     "id": 8,
-    "name": "Divya Nair",
+    "name": "Dipesh Shahi",
     "bloodGroup": "O+",
-    "city": "Bangalore",
-    "phone": "+91-21098-76543",
+    "city": "Pokhara",
+    "phone": "+977-98618-99001",
     "age": 26,
     "lastDonated": "2026-01-25",
-    "available": true
+    "available": true,
+    "status": "available"
   },
   {
     "id": 9,
-    "name": "Rohit Desai",
+    "name": "Sunita KC",
     "bloodGroup": "AB-",
-    "city": "Pune",
-    "phone": "+91-10987-65432",
+    "city": "Birgunj",
+    "phone": "+977-98417-22334",
     "age": 33,
     "lastDonated": "2025-08-10",
-    "available": true
+    "available": false,
+    "status": "busy"
   },
   {
     "id": 10,
-    "name": "Meera Joshi",
+    "name": "Suresh Tamang",
     "bloodGroup": "A+",
-    "city": "Mumbai",
-    "phone": "+91-99887-76655",
+    "city": "Kathmandu",
+    "phone": "+977-98020-33456",
     "age": 30,
     "lastDonated": "2026-02-20",
-    "available": true
+    "available": false,
+    "status": "busy"
   },
   {
     "id": 11,
-    "name": "Naveen Kumar",
+    "name": "Priya Shrestha",
     "bloodGroup": "B+",
-    "city": "Delhi",
-    "phone": "+91-88776-65544",
+    "city": "Lalitpur",
+    "phone": "+977-98125-44556",
     "age": 29,
     "lastDonated": "2025-12-01",
-    "available": true
+    "available": true,
+    "status": "available"
   },
   {
     "id": 12,
-    "name": "Lakshmi Prasad",
+    "name": "Ramesh Chettri",
     "bloodGroup": "O-",
-    "city": "Hyderabad",
-    "phone": "+91-77665-54433",
+    "city": "Chitwan",
+    "phone": "+977-98522-55667",
     "age": 37,
     "lastDonated": "2026-03-10",
+    "available": false,
+    "status": "offline"
+  },
+  {
+    "id": 13,
+    "name": "Amulya Shrestha",
+    "bloodGroup": "O+",
+    "city": "Dhulikhel",
+    "phone": "9810218978",
+    "age": 26,
+    "lastDonated": "2026-04-25",
+    "available": true,
+    "status": "available"
+  },
+  {
+    "id": 14,
+    "name": "Samay Nepal",
+    "bloodGroup": "B+",
+    "city": "Dhulikhel",
+    "phone": "9810218977",
+    "age": 27,
+    "lastDonated": "2026-04-25",
+    "available": false,
+    "status": "busy"
+  },
+  {
+    "id": 15,
+    "name": "Sandesh Sapkota",
+    "bloodGroup": "O+",
+    "city": "Dhulikhel",
+    "phone": "9842249867",
+    "age": 28,
+    "lastDonated": "2026-04-25",
+    "available": true
+  },
+  {
+    "id": 16,
+    "name": "Amulya Shrestha",
+    "bloodGroup": "A-",
+    "city": "Dhulikhel",
+    "phone": "9810218977",
+    "age": 0,
+    "lastDonated": "2026-04-26",
     "available": true
   }
 ]

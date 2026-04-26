@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request Blood - BloodLink</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo-small">
+        <span class="logo-icon">&#9829;</span>
+        BloodLink
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="find-donor.html">Find Donors</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="compatibility.html">Blood Types</a></li>
+        <li><a href="request.html" class="active">Request Blood</a></li>
+        <li><a href="hospitals.html">Hospitals</a></li>
+        <li><a href="drives.html">Drives</a></li>
+        <li><a href="bloodbank.html">Blood Banks</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="header-small emergency-header">
+    <div class="container">
+      <h1>🚨 Request Blood</h1>
+      <p>Send emergency alerts to nearby donors</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+    <div class="container">
+      
+      <!-- Request Form -->
+      <section class="form-card emergency-form">
+        <h2>Blood Request Form</h2>
+        <p class="form-desc">Your request will be sent to nearby donors instantly.</p>
+
+        <form id="requestForm" class="request-form">
+          
+          <!-- Patient Name -->
+          <div class="form-group">
+            <label for="patientName">Patient Name *</label>
+            <input type="text" id="patientName" name="patientName" placeholder="Full name of patient" required>
+          </div>
+
+          <!-- Blood Group -->
+          <div class="form-group">
+            <label for="reqBloodGroup">Blood Group Needed *</label>
+            <select id="reqBloodGroup" name="bloodGroup" required>
+              <option value="" disabled selected>-- Select Blood Group --</option>
+              <option value="A+">A+</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B-">B-</option>
+              <option value="AB+">AB+</option>
+              <option value="AB-">AB-</option>
+              <option value="O+">O+</option>
+              <option value="O-">O-</option>
+            </select>
+          </div>
+
+          <!-- Location -->
+          <div class="form-group">
+            <label for="reqLocation">Location / City *</label>
+            <input type="text" id="reqLocation" name="location" placeholder="Hospital or area" required>
+          </div>
+
+          <!-- Urgency -->
+          <div class="form-group">
+            <label for="urgency">Urgency Level *</label>
+            <select id="urgency" name="urgency" required>
+              <option value="" disabled selected>-- Select Urgency --</option>
+              <option value="normal">Normal (within 24 hours)</option>
+              <option value="urgent">Urgent (within 4 hours)</option>
+              <option value="emergency">Emergency (IMMEDIATE)</option>
+            </select>
+          </div>
+
+          <!-- Message -->
+          <div class="form-group">
+            <label for="message">Additional Details (Optional)</label>
+            <textarea id="message" name="message" placeholder="Any additional information..." rows="3"></textarea>
+          </div>
+
+          <!-- Buttons -->
+          <div class="button-row">
+            <button type="submit" class="btn btn-emergency">
+              <span class="btn-icon">🚨</span> Send Request
+            </button>
+            <button type="reset" class="btn btn-secondary">Clear</button>
+          </div>
+        </form>
+
+        <!-- Loading Spinner -->
+        <div id="reqLoadingSpinner" class="loading-spinner hidden">
+          <div class="spinner"></div>
+          <p>Sending alert to donors...</p>
+        </div>
+
+        <!-- Alert Message -->
+        <div id="reqAlertBox" class="alert-box hidden"></div>
+
+        <!-- Live Emergency Broadcast Panel -->
+        <div id="liveStatusPanel" class="live-status-panel hidden">
+          <div class="status-header">
+            <span class="status-dot"></span>
+            Live Emergency Broadcast
+          </div>
+          <ul id="statusList" class="status-list"></ul>
+          <div id="donorCards" class="donor-cards hidden"></div>
+        </div>
+      </section>
+
+      <!-- Important Notes -->
+      <section class="notes-section">
+        <h3>⚠️ Important Information</h3>
+        <div class="notes-grid">
+          <div class="note-card">
+            <h4>Emergency Response</h4>
+            <p>Emergency requests are prioritized. Nearby donors will be notified immediately.</p>
+          </div>
+          <div class="note-card">
+            <h4>Contact Verification</h4>
+            <p>Ensure location and contact details are accurate for faster donor response.</p>
+          </div>
+          <div class="note-card">
+            <h4>Hospital Support</h4>
+            <p>Coordinate with your hospital's blood bank for receiving donations.</p>
+          </div>
+          <div class="note-card">
+            <h4>Follow-up</h4>
+            <p>We'll track donor responses and send updates to your contact number.</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 BloodLink. Connecting Lives, Saving Lives.</p>
+    </div>
+  </footer>
+
+  <script src="pages.js"></script>
+</body>
+</html>

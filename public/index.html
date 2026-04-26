@@ -3,111 +3,169 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BloodLink - Find Blood Donors Instantly</title>
-  <!-- Link to our stylesheet -->
+  <title>BloodLink - Instant Blood Donor Network</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Google Font for modern typography -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header / Navigation -->
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo-small">
+        <span class="logo-icon">&#9829;</span>
+        BloodLink
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="find-donor.html">Find Donors</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="compatibility.html">Blood Types</a></li>
+        <li><a href="request.html">Request Blood</a></li>
+        <li><a href="hospitals.html">Hospitals</a></li>
+        <li><a href="drives.html">Drives</a></li>
+        <li><a href="bloodbank.html">Blood Banks</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header / Hero Section -->
   <header class="header">
     <div class="container">
-      <div class="logo">
-        <span class="logo-icon">&#9829;</span>
-        <span class="logo-text">BloodLink</span>
+      <div class="hero-content">
+        <div class="logo">
+          <span class="logo-icon">&#9829;</span>
+          <span class="logo-text">BloodLink</span>
+        </div>
+        <p class="tagline">Instant Blood Donor Network</p>
+        <p class="hero-subtitle">Connect donors and recipients in real-time. Save lives in emergencies.</p>
       </div>
-      <p class="tagline">Find nearby blood donors in emergencies</p>
     </div>
   </header>
 
   <!-- Main Content Area -->
   <main class="main">
     <div class="container">
-      <!-- Search Card -->
-      <section class="search-card">
-        <h2>Search for Donors</h2>
-        <p class="search-desc">Enter blood group and city to find available donors near you.</p>
-
-        <form id="searchForm" class="search-form">
-          <!-- Blood Group Dropdown -->
-          <div class="form-group">
-            <label for="bloodGroup">Blood Group</label>
-            <select id="bloodGroup" name="bloodGroup" required>
-              <option value="" disabled selected>-- Select Blood Group --</option>
-              <option value="A+">A+</option>
-              <option value="A-">A-</option>
-              <option value="B+">B+</option>
-              <option value="B-">B-</option>
-              <option value="AB+">AB+</option>
-              <option value="AB-">AB-</option>
-              <option value="O+">O+</option>
-              <option value="O-">O-</option>
-            </select>
+      
+      <!-- Hero Problem & Solution Section -->
+      <section class="hero-section">
+        <div class="hero-grid">
+          <div class="hero-card problem-card">
+            <div class="hero-icon">⚠️</div>
+            <h3>The Problem</h3>
+            <p>Finding compatible blood donors quickly during emergencies is difficult. Every minute matters.</p>
           </div>
-
-          <!-- City Input -->
-          <div class="form-group">
-            <label for="city">City</label>
-            <input type="text" id="city" name="city" placeholder="e.g. Mumbai, Delhi, Bangalore" required>
+          <div class="hero-card solution-card">
+            <div class="hero-icon">✅</div>
+            <h3>Our Solution</h3>
+            <p>BloodLink connects you with nearby donors instantly. Real-time network. Verified donors. Fast response.</p>
           </div>
-
-          <!-- Buttons Row -->
-          <div class="button-row">
-            <button type="submit" class="btn btn-primary">
-              <span class="btn-icon">&#128269;</span> Find Donors
-            </button>
-            <button type="button" id="emergencyBtn" class="btn btn-emergency">
-              <span class="pulse"></span> Emergency Mode
-            </button>
-          </div>
-        </form>
-      </section>
-
-      <!-- Loading Spinner (hidden by default) -->
-      <div id="loadingSpinner" class="loading-spinner hidden">
-        <div class="spinner"></div>
-        <p>Searching for donors...</p>
-      </div>
-
-      <!-- Alert Message Area -->
-      <div id="alertBox" class="alert-box hidden"></div>
-
-      <!-- Results Section (hidden by default) -->
-      <section id="resultsSection" class="results-section hidden">
-        <div class="results-header">
-          <h3>Available Donors</h3>
-          <span id="resultCount" class="result-badge">0 found</span>
         </div>
-        <div id="donorsList" class="donors-list"></div>
       </section>
 
-      <!-- Smart Suggestions Section (hidden by default) -->
-      <section id="suggestionsSection" class="suggestions-section hidden">
-        <div class="suggestions-header">
-          <h3>&#128161; Smart Suggestions</h3>
-          <p>These compatible blood groups can also help:</p>
+      <!-- Features Grid -->
+      <section class="features-section">
+        <h2 class="section-title">What We Offer</h2>
+        
+        <div class="features-grid">
+          <!-- Feature 1: Find Donors -->
+          <div class="feature-card">
+            <div class="feature-icon">🔍</div>
+            <h3>Find Donors</h3>
+            <p>Search for available donors by blood group and location. Get instant matches.</p>
+            <a href="find-donor.html" class="feature-link">Find Now →</a>
+          </div>
+
+          <!-- Feature 2: Register -->
+          <div class="feature-card">
+            <div class="feature-icon">✋</div>
+            <h3>Register Donor</h3>
+            <p>Join our network and help save lives. Quick registration. Real impact.</p>
+            <a href="register.html" class="feature-link">Register Now →</a>
+          </div>
+
+          <!-- Feature 3: Blood Type Checker -->
+          <div class="feature-card">
+            <div class="feature-icon">🧬</div>
+            <h3>Blood Type Info</h3>
+            <p>Learn about blood compatibility and which types can help you.</p>
+            <a href="compatibility.html" class="feature-link">Learn More →</a>
+          </div>
+
+          <!-- Feature 4: Emergency Request -->
+          <div class="feature-card">
+            <div class="feature-icon">🚨</div>
+            <h3>Emergency Alert</h3>
+            <p>Send emergency requests to nearby donors. Instant notifications.</p>
+            <a href="request.html" class="feature-link">Send Alert →</a>
+          </div>
+
+          <!-- Feature 5: Find Hospitals -->
+          <div class="feature-card">
+            <div class="feature-icon">🏥</div>
+            <h3>Hospitals & Banks</h3>
+            <p>Locate nearby blood banks and hospitals with verified contact info.</p>
+            <a href="hospitals.html" class="feature-link">Find Location →</a>
+          </div>
+
+          <!-- Feature 6: Donation Drives -->
+          <div class="feature-card">
+            <div class="feature-icon">📍</div>
+            <h3>Blood Drives</h3>
+            <p>Upcoming donation events in your city. Contribute when convenient.</p>
+            <a href="drives.html" class="feature-link">View Events →</a>
+          </div>
         </div>
-        <div id="suggestionsList" class="suggestions-list"></div>
       </section>
 
-      <!-- No Results Message (hidden by default) -->
-      <div id="noResults" class="no-results hidden">
-        <p class="no-results-icon">&#128549;</p>
-        <h4>No donors found</h4>
-        <p>Try a different city or compatible blood group.</p>
-      </div>
+      <!-- CTA Section -->
+      <section class="cta-section">
+        <div class="cta-box">
+          <h2>Ready to Save Lives?</h2>
+          <p>Choose an action to get started:</p>
+          <div class="cta-buttons">
+            <a href="find-donor.html" class="btn btn-primary">🔍 Find a Donor</a>
+            <a href="register.html" class="btn btn-secondary">✋ Become a Donor</a>
+            <a href="request.html" class="btn btn-emergency">🚨 Emergency Request</a>
+            <a href="bloodbank.html" class="btn btn-secondary">🏥 View Blood Bank Availability</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section class="stats-section">
+        <h2 class="section-title">BloodLink Impact</h2>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Registered Donors</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Cities Covered</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">1000+</div>
+            <div class="stat-label">Lives Saved</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Emergency Support</div>
+          </div>
+        </div>
+      </section>
+
     </div>
   </main>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>BloodLink Hackathon Project. Built for demo purposes.</p>
+      <p>&copy; 2026 BloodLink. Connecting Lives, Saving Lives.</p>
+      <p class="footer-note">Built with ❤️ for emergencies. Every second counts.</p>
     </div>
   </footer>
 
-  <!-- JavaScript file -->
+  <!-- Scripts -->
   <script src="script.js"></script>
 </body>
 </html>

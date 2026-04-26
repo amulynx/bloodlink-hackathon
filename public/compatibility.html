@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Type Compatibility - BloodLink</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo-small">
+        <span class="logo-icon">&#9829;</span>
+        BloodLink
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="find-donor.html">Find Donors</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="compatibility.html" class="active">Blood Types</a></li>
+        <li><a href="request.html">Request Blood</a></li>
+        <li><a href="hospitals.html">Hospitals</a></li>
+        <li><a href="drives.html">Drives</a></li>
+        <li><a href="bloodbank.html">Blood Banks</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="header-small">
+    <div class="container">
+      <h1>🧬 Blood Type Compatibility</h1>
+      <p>Learn which blood types can donate to you</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+    <div class="container">
+      
+      <!-- Blood Type Selector -->
+      <section class="selector-section">
+        <h2>Select Your Blood Type</h2>
+        <div class="blood-type-selector">
+          <button class="blood-btn" data-type="A+">A+</button>
+          <button class="blood-btn" data-type="A-">A-</button>
+          <button class="blood-btn" data-type="B+">B+</button>
+          <button class="blood-btn" data-type="B-">B-</button>
+          <button class="blood-btn" data-type="AB+">AB+</button>
+          <button class="blood-btn" data-type="AB-">AB-</button>
+          <button class="blood-btn" data-type="O+">O+</button>
+          <button class="blood-btn" data-type="O-">O-</button>
+        </div>
+      </section>
+
+      <!-- Compatibility Info -->
+      <section id="compatSection" class="compat-section hidden">
+        <div class="compat-header">
+          <h2 id="compatTitle"></h2>
+          <p id="compatDesc"></p>
+        </div>
+
+        <!-- Donors Card -->
+        <div class="compat-grid">
+          <div class="compat-card donors-card">
+            <div class="compat-icon">💉</div>
+            <h3>Who Can Donate TO You</h3>
+            <p class="compat-subtitle">Blood groups that can donate to you:</p>
+            <div id="donorsList" class="compat-types"></div>
+          </div>
+
+          <!-- Recipients Card -->
+          <div class="compat-card recipients-card">
+            <div class="compat-icon">👥</div>
+            <h3>Who YOU Can Donate TO</h3>
+            <p class="compat-subtitle">Blood groups you can help:</p>
+            <div id="recipientsList" class="compat-types"></div>
+          </div>
+        </div>
+
+        <!-- Information Cards -->
+        <div class="blood-info">
+          <div class="info-box">
+            <h4>🌍 Universal Donor: O-</h4>
+            <p>Can donate to all blood types. Critical in emergencies.</p>
+          </div>
+          <div class="info-box">
+            <h4>⭐ Universal Recipient: AB+</h4>
+            <p>Can receive from all blood types. Rarest blood type.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Compatibility Chart Table -->
+      <section class="chart-section">
+        <h2>Complete Compatibility Chart</h2>
+        <div class="table-responsive">
+          <table class="compat-table">
+            <thead>
+              <tr>
+                <th>Your Blood Type</th>
+                <th>Can Donate To</th>
+                <th>Can Receive From</th>
+                <th>Rh Factor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>A+</td><td>A+, AB+</td><td>A+, A-, O+, O-</td><td>Positive</td></tr>
+              <tr><td>A-</td><td>A+, A-, AB+, AB-</td><td>A-, O-</td><td>Negative</td></tr>
+              <tr><td>B+</td><td>B+, AB+</td><td>B+, B-, O+, O-</td><td>Positive</td></tr>
+              <tr><td>B-</td><td>B+, B-, AB+, AB-</td><td>B-, O-</td><td>Negative</td></tr>
+              <tr><td>AB+</td><td>AB+ only</td><td>All types</td><td>Positive</td></tr>
+              <tr><td>AB-</td><td>AB+, AB-</td><td>A-, B-, AB-, O-</td><td>Negative</td></tr>
+              <tr><td>O+</td><td>O+, A+, B+, AB+</td><td>O+, O-</td><td>Positive</td></tr>
+              <tr><td>O-</td><td>All types</td><td>O- only</td><td>Negative</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 BloodLink. Connecting Lives, Saving Lives.</p>
+    </div>
+  </footer>
+
+  <script src="pages.js"></script>
+</body>
+</html>

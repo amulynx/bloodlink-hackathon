@@ -64,19 +64,19 @@ That's it! The app is running.
 ## How to Use the App
 
 1. **Select a Blood Group** from the dropdown (e.g., `O+`, `A+`, `B-`).
-2. **Type a City** (e.g., `Mumbai`, `Delhi`, `Bangalore`).
+2. **Type a City** (e.g., `Kathmandu`, `Lalitpur`, `Pokhara`).
 3. Click **Find Donors** to search.
 4. If no exact match is found, the app shows **Smart Suggestions** with compatible blood groups.
 5. Click **Emergency Mode** to simulate sending an urgent alert to all matching donors.
 
 ### Demo Search Ideas
 
-| Blood Group | City      | Expected Result              |
-|-------------|-----------|------------------------------|
-| O+          | Mumbai    | 1 donor (Rahul Sharma)       |
-| A+          | Mumbai    | 2 donors (Priya, Meera)      |
-| O-          | Bangalore | 1 donor (Vikram Singh)       |
-| B+          | Chennai   | No exact match → suggestions |
+| Blood Group | City      | Expected Result                          |
+|-------------|-----------|------------------------------------------|
+| O+          | Kathmandu | 1 donor (Sujan Shrestha)                 |
+| A+          | Lalitpur  | 1 donor (Mina Gurung)                    |
+| O-          | Bhaktapur | 1 donor (Pratik Thapa)                   |
+| B+          | Pokhara   | 1 donor (Nischal Rai)                    |
 
 ---
 
@@ -90,7 +90,7 @@ The backend provides the following REST API endpoints:
 GET /api/donors?bloodGroup={group}&city={city}
 ```
 
-**Example:** `GET /api/donors?bloodGroup=O+&city=Mumbai`
+**Example:** `GET /api/donors?bloodGroup=O+&city=Kathmandu`
 
 **Response:**
 ```json
@@ -100,12 +100,12 @@ GET /api/donors?bloodGroup={group}&city={city}
   "data": [
     {
       "id": 1,
-      "name": "Rahul Sharma",
+      "name": "Sujan Shrestha",
       "bloodGroup": "O+",
-      "city": "Mumbai",
-      "phone": "+91-98765-43210",
+      "city": "Kathmandu",
+      "phone": "+977-98010-12345",
       "age": 28,
-      "lastDonated": "2025-12-15",
+      "lastDonated": "2026-03-10",
       "available": true
     }
   ]
@@ -122,7 +122,7 @@ GET /api/donors/suggest?bloodGroup={group}&city={city}
 
 Returns compatible blood groups with available donors when no exact match exists.
 
-**Example:** `GET /api/donors/suggest?bloodGroup=AB+&city=Mumbai`
+**Example:** `GET /api/donors/suggest?bloodGroup=AB+&city=Kathmandu`
 
 **Response:**
 ```json
@@ -152,7 +152,7 @@ POST /api/emergency
 ```json
 {
   "bloodGroup": "O+",
-  "city": "Mumbai"
+  "city": "Kathmandu"
 }
 ```
 

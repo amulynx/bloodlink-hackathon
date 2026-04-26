@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Kathmandu Central Blood Bank",
+    "city": "Kathmandu",
+    "contact": "+977-01-555-0123",
+    "inventory": [
+      { "group": "A+", "units": 12 },
+      { "group": "A-", "units": 4 },
+      { "group": "B+", "units": 8 },
+      { "group": "O+", "units": 9 },
+      { "group": "O-", "units": 1 }
+    ]
+  },
+  {
+    "name": "Lalitpur Community Blood Bank",
+    "city": "Lalitpur",
+    "contact": "+977-01-555-0456",
+    "inventory": [
+      { "group": "A+", "units": 5 },
+      { "group": "A-", "units": 2 },
+      { "group": "B+", "units": 3 },
+      { "group": "B-", "units": 0 },
+      { "group": "O-", "units": 0 }
+    ]
+  },
+  {
+    "name": "Pokhara Lifeline Blood Bank",
+    "city": "Pokhara",
+    "contact": "+977-061-555-0789",
+    "inventory": [
+      { "group": "A+", "units": 6 },
+      { "group": "B+", "units": 4 },
+      { "group": "AB+", "units": 2 },
+      { "group": "AB-", "units": 1 },
+      { "group": "O-", "units": 0 }
+    ]
+  }
+]

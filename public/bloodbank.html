@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Bank Availability - BloodLink</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo-small">
+        <span class="logo-icon">&#9829;</span>
+        BloodLink
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="find-donor.html">Find Donors</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="compatibility.html">Blood Types</a></li>
+        <li><a href="request.html">Request Blood</a></li>
+        <li><a href="hospitals.html">Hospitals</a></li>
+        <li><a href="drives.html">Drives</a></li>
+        <li><a href="bloodbank.html" class="active">Blood Banks</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="header-small">
+    <div class="container">
+      <h1>Blood Bank Availability</h1>
+      <p>See stock levels at each blood bank, with low and out-of-stock alerts.</p>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <section class="search-card">
+        <div class="results-header">
+          <h2>Blood Bank Availability</h2>
+          <p class="search-desc">Static unit counts powered by local JSON data.</p>
+        </div>
+
+        <div id="bloodBankGrid" class="bloodbank-grid"></div>
+        <div id="bloodBankError" class="alert-box hidden"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 BloodLink. Connecting Lives, Saving Lives.</p>
+    </div>
+  </footer>
+
+  <script src="pages.js"></script>
+</body>
+</html>

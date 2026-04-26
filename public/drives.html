@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Donation Drives - BloodLink</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo-small">
+        <span class="logo-icon">&#9829;</span>
+        BloodLink
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="find-donor.html">Find Donors</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="compatibility.html">Blood Types</a></li>
+        <li><a href="request.html">Request Blood</a></li>
+        <li><a href="hospitals.html">Hospitals</a></li>
+        <li><a href="drives.html" class="active">Drives</a></li>
+        <li><a href="bloodbank.html">Blood Banks</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="header-small">
+    <div class="container">
+      <h1>📍 Blood Donation Drives</h1>
+      <p>Upcoming events in your area</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+    <div class="container">
+      
+      <!-- Drives List -->
+      <section class="list-section">
+        <div class="section-header">
+          <h2>Upcoming Events</h2>
+          <p class="section-desc">Join these donation drives and make a difference</p>
+        </div>
+
+        <div id="drivesList" class="drives-grid">
+          <!-- Loaded dynamically -->
+        </div>
+      </section>
+
+      <!-- Loading Spinner -->
+      <div id="drivesLoadingSpinner" class="loading-spinner hidden">
+        <div class="spinner"></div>
+        <p>Loading events...</p>
+      </div>
+
+      <!-- Alert -->
+      <div id="drivesAlertBox" class="alert-box hidden"></div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 BloodLink. Connecting Lives, Saving Lives.</p>
+    </div>
+  </footer>
+
+  <script src="pages.js"></script>
+</body>
+</html>
